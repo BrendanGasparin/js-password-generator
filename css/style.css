@@ -30,19 +30,6 @@ button, input {
   padding: 0.3rem 1rem;
 }
 
-input[type="number"] {
-  -moz-appearance: textfield;
-  appearance: textfield;
-}
-
-input[type="number"]::webkit-inner-spin-button,
-input[type="number"]::webkit-outer-spin-button {
-  -webkit-appearance: inner-spin-button;
-  appearance: inner-spin-button;
-  display: block !important;
-  margin: 0;
-}
-
 @media (min-width: 992px) {
   * {
     font-size: 22px;
