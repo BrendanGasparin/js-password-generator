@@ -8,6 +8,10 @@ body {
   color: #ffffff;
 }
 
+h1, p, fieldset {
+  margin: 1rem;
+}
+
 fieldset {
   border: none;
 }
