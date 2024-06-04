@@ -7,11 +7,19 @@
     <h1>JS Password Generator</h1>
     <p>Generate a strong password.</p>
     <form>
-      <select>
-        <option>8</option>
-      </select>
-      <textarea cols="128" rows="64"></textarea>
-      <button>Submit</button>
+      <fieldset>
+        <label>Password length: 
+          <select id="pass-length">
+            <option>8</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <textarea cols="64" rows="64"></textarea>
+      </fieldset>
+      <fieldset>
+        <button>Submit</button>
+      </fieldset>
     </form>
   </body>
 </html>
