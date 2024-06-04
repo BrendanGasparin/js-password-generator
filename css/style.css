@@ -6,6 +6,11 @@
 body {
   background-color: #000000;
   color: #ffffff;
+  font-size: 22px;
+}
+
+h1 {
+  font-size: 2.5rem;
 }
 
 h1, p, fieldset {
@@ -22,4 +27,5 @@ textarea {
 
 button, input {
   padding: 0.3rem 1rem;
+  font-size: 1.2rem;
 }
