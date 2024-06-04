@@ -15,3 +15,11 @@ h1, p, fieldset {
 fieldset {
   border: none;
 }
+
+textarea {
+  padding: 1rem;
+}
+
+button, input {
+  padding: 0.3rem 1rem;
+}
