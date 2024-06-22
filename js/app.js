@@ -43,6 +43,7 @@ function generatePassword(event) {
     }
 }
 
+// Write currently generated password to the clipboard
 function copyToClipboard(event) {
     // Stop default submit button behaviour
     event.preventDefault();
@@ -55,6 +56,7 @@ function copyToClipboard(event) {
         })
         .catch(err => {
             alert('Failed to copy to clipboard. ' + err);
+            // TODO(?): Handle common errors such as permission denied
         });
 }
 
