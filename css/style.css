@@ -38,6 +38,10 @@ button, input {
   color: #000000;
 }
 
+.clipboard {
+  font-weight: bold;
+}
+
 @media (min-width: 992px) {
   * {
     font-size: 22px;
