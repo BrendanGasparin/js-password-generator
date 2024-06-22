@@ -28,6 +28,10 @@ textarea {
   height: 40vh;
 }
 
+button {
+  background-color: #cccccc;
+}
+
 button, input {
   padding: 0.3rem 1rem;
   color: #000000;
