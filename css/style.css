@@ -26,6 +26,7 @@ textarea {
   width: 80vw;
   height: 40vh;
   font-family: monospace;
+  font-size: 1.4rem;
 }
 
 button {
