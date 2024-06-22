@@ -1,7 +1,7 @@
 function generatePassword(event) {
     // Stop default submit button behaviour
     event.preventDefault();
-
+        
     const textArea = document.querySelector('textarea');
     const inputField = document.querySelector('input');
     const numChars = inputField.value;
@@ -41,6 +41,21 @@ function generatePassword(event) {
     }
 }
 
+function copyToClipboard(event) {
+    // Stop default submit button behaviour
+    event.preventDefault();
+
+    const password = document.querySelector('textarea').value;
+
+    navigator.clipboard.writeText(password)
+        .then(() => {
+            alert('Copied to clipboard.');
+        })
+        .catch(err => {
+            alert('Failed to copy to clipboard. ' + err);
+        });
+}
+
 function getDigit() {
     const zero = 48;
     const numDigits = 10;
@@ -76,5 +91,6 @@ function isStrongPassword(password) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    document.querySelector('form').addEventListener('submit', generatePassword);
+    document.querySelector('.submit').addEventListener('click', generatePassword);
+    document.querySelector('.clipboard').addEventListener('click', copyToClipboard);
 });
