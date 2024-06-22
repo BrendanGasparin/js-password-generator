@@ -23,9 +23,9 @@ fieldset {
 
 textarea {
   padding: 1rem;
-  font-size: 0.7rem;
   width: 80vw;
   height: 40vh;
+  font-family: monospace;
 }
 
 button {
