@@ -65,7 +65,14 @@ function getSpecialChar() {
 }
 
 function isStrongPassword(password) {
-    return true;
+    const hasUpper = /[A-Z]/.test(password);
+    const hasLower = /[a-z]/.test(password);
+    const hasDigit = /[0-9]/.test(password);
+    const hasSpecialChar = /[^A-Za-z0-9]/.test(password);
+    
+    // Return true if the password has at least one of each:
+    // uppercase character, lowercase character, digit, special character
+    return hasUpper && hasLower && hasDigit && hasSpecialChar;
 }
 
 document.addEventListener('DOMContentLoaded', function() {
